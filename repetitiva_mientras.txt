@@ -1,2 +1,31 @@
 estructura repetitiva mientras
 Diseñar un algoritmo que realice la división de dos números enteros positivos utilizando restas sucesivas. El programa deberá calcular cuántas veces se puede restar el divisor del dividendo antes de que el resultado sea menor que el divisor.(repetitiva while)
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,ns,pp,pi;
+	int sp,si,cp,ci;
+	cout<<"cantidad de numero que va a escribir: ";
+	cin>>n;
+	sp=0;
+	si=0;
+	cp=0;
+	ci=0;
+	for(int i=0;i<n;i++){
+		cout<<"escribir un numero: ";
+		cin>>ns;
+		if(ns%2==0){
+			sp=sp+ns;
+			cp=cp+1;
+		}else {
+			si=si+ns;
+			ci=ci+1;
+		}
+	}
+	pp=sp/cp;
+	cout <<"el promedio de los pares escritos son "<<pp<<endl;
+	pi=si/ci;
+	cout <<"el promedio de los impares escritos son "<<pi<<endl;
+	return 0;
+}
