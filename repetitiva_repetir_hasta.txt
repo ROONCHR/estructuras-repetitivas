@@ -1,1 +1,2 @@
 estructura repetitiva repetir-hasta
+Diseñar un algoritmo que permita leer N números por el teclado. El programa debe calcular el promedio de los números pares y el promedio de los números impares (usando el for)
