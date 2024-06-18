@@ -1,2 +1,31 @@
 estructura repetitiva repetir-hasta
 Diseñar un algoritmo que permita leer N números por el teclado. El programa debe calcular el promedio de los números pares y el promedio de los números impares (usando el for)
+
+#include<iostream>
+
+using namespace std;
+int main(){
+int contpar,contimp,sumpar,sumimp,cant,a,b,num;
+cout<<"escribe la cantidad de numeros que va a escribir"<<endl;
+cin>>cant;
+sumpar=0;
+sumimp=0;
+contpar=0;
+contimp=0;
+for(int i=1;i<=cant;i++){
+	cout<<"escribe un numero: ";
+	cin>>num;
+	if(num%2==0){
+		sumpar=sumpar+num;
+		contpar=contpar+1;
+	}else{
+		sumimp=sumimp+num;
+		contimp=contimp+1;
+	}
+}
+a=sumpar/contpar;
+b=sumimp/contimp;
+cout<<"el promedio de los pares son: "<<a<<endl;
+cout<<"el promedio se los impares son: "<<b<<endl;
+return 0;
+}
