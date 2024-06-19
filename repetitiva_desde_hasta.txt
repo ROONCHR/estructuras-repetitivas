@@ -5,10 +5,11 @@ Leer números por teclado hasta introducir uno negativo (do-while)
 
 using namespace std;
 int main(){
-int num;
+double num;
 do{
-	cout<<"escribe un numero"<<endl;
+	cout<<"escribe un numero, escribe un negativo para finalizar"<<endl;
 	cin>>num;
 }while(num>=0);
+cout<<"escribio un negativo, fin del proceso";
 return 0;
 }
