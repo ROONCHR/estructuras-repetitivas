@@ -6,8 +6,15 @@ Diseñar un algoritmo que permita leer N números por el teclado. El programa de
 using namespace std;
 int main(){
 int contpar,contimp,sumpar,sumimp,cant,a,b,num;
+char letra; 
 cout<<"escribe la cantidad de numeros que va a escribir"<<endl;
 cin>>cant;
+
+if(cant==letra){
+ cout<<"El dato ingresado no es valido. "; 
+ return 1; 
+}
+
 sumpar=0;
 sumimp=0;
 contpar=0;
