@@ -4,17 +4,17 @@ Diseñar un algoritmo que realice la división de dos números enteros positivos
 #include<iostream>
 using namespace std;
 int main(){
-int div,dis,cant;
+int dividendo,divisor,cantidad;
 cout<<"escribir el dividendo "<<endl;
-cin>>div;
+cin>>dividendo;
 cout<<"escribir el divisor "<<endl;
-cin>>dis;
-cant=0;
-while(div>dis){
-	div=div-dis;
-	cant=cant+1;
+cin>>divisor;
+cantidad=0;
+while(dividendo>divisor){
+	dividendo=dividendo-divisor;
+	cantidad=cantidad+1;
 }
-cout<<"la cantidad de restas sucesivas son: "<<cant;
+cout<<"la cantidad de restas sucesivas son: "<<cantidad;
 return 0;
 }
 }
